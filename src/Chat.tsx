@@ -45,7 +45,7 @@ export default class Chat extends React.Component<{}, IChatState> {
     }
 
     public render() {
-        const link = "https://otr.to/#" + this.peerId;
+        const link = "https://otr-to.vercel.app/#" + this.peerId;
         const messageInput = this.state.connection ? (
             <div className="container" style={{ position: 'fixed', bottom: 0, right: '50%', transform: 'translateX(50%)', width: '100%', padding: '.5rem' }}>
                 <form onSubmit={this.sendMessage}>
